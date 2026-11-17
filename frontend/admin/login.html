@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Login | RUMYU-UG</title>
+  
+  <!-- ONLY LINK TO ADMIN CSS -->
+  <link rel="stylesheet" href="../css/admin.css">
+  
+  <!-- Font for elegant text -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="admin-login-body">
+
+  <main class="admin-login-wrapper">
+    <div class="admin-login-card reveal">
+      
+      <!-- Real Logo -->
+      <a href="../index.html" class="admin-logo" aria-label="RUMYU-UG Home" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; margin-bottom: 2rem;">
+        <img src="../assets/images/logo.jpg" alt="RUMYU-UG Logo" style="height: 80px; width: auto; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        <span style="font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--admin-navy); line-height: 1;">RUMYU-UG</span>
+        <span style="font-size: 0.85rem; color: var(--admin-muted); margin-top: 0.25rem; font-weight: 500;">Admin Portal</span>
+      </a>
+      
+      <h1 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; text-align: center; margin-bottom: 0.5rem; color: var(--admin-navy);">Administrator Login</h1>
+      <p style="text-align: center; font-size: 0.9rem; color: var(--admin-muted); margin-bottom: 2rem;">Authorized personnel only.</p>
+
+      <form id="loginForm" novalidate>
+        <div class="form-group" style="margin-bottom: 1.25rem;">
+          <label for="username" style="display: block; font-weight: 600; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--admin-navy);">Username</label>
+          <input type="text" id="username" name="username" placeholder="Enter username" required autocomplete="username" style="width: 100%; padding: 0.8rem; border: 1px solid var(--admin-border); border-radius: 8px; font-family: 'Inter', sans-serif; box-sizing: border-box; transition: border-color 0.2s;">
+        </div>
+        
+        <div class="form-group" style="margin-bottom: 1.5rem;">
+          <label for="password" style="display: block; font-weight: 600; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--admin-navy);">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter password" required autocomplete="current-password" style="width: 100%; padding: 0.8rem; border: 1px solid var(--admin-border); border-radius: 8px; font-family: 'Inter', sans-serif; box-sizing: border-box; transition: border-color 0.2s;">
+        </div>
+        
+        <button type="submit" id="loginBtn" style="width: 100%; background: var(--admin-navy); color: var(--admin-white); padding: 1rem; border: none; border-radius: 8px; font-weight: 600; font-size: 1rem; cursor: pointer; transition: background 0.2s; font-family: 'Inter', sans-serif;">
+          Log In to Dashboard
+        </button>
+        
+        <div class="form-message" aria-live="polite" style="margin-top: 1rem; text-align: center;"></div>
+      </form>
+
+      <div style="text-align: center; margin-top: 2rem; font-size: 0.85rem;">
+        <a href="../index.html" style="color: var(--admin-muted); text-decoration: none; font-weight: 500; transition: color 0.2s;">&larr; Return to Website</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="../js/admin.js"></script>
+</body>
+</html>

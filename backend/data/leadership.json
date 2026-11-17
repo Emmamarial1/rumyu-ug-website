@@ -1,0 +1,94 @@
+[
+  {
+    "id": "leadership-2",
+    "name": "To be confirmed",
+    "position": "Vice Chairperson",
+    "group": "Executive Committee",
+    "photo": "/assets/images/avatar.svg",
+    "bio": "Placeholder profile. The name, photograph and biography will be added after confirmation by RUMYU-UG.",
+    "responsibilities": "Draft description (to be confirmed by the organisation): Supports the Chairperson and acts on their behalf when needed.",
+    "order": 2,
+    "isPlaceholder": true,
+    "createdAt": "2026-11-04T00:00:00.000Z",
+    "updatedAt": "2026-11-04T00:00:00.000Z"
+  },
+  {
+    "id": "leadership-3",
+    "name": "To be confirmed",
+    "position": "Secretary General",
+    "group": "Executive Committee",
+    "photo": "/assets/images/avatar.svg",
+    "bio": "Placeholder profile. The name, photograph and biography will be added after confirmation by RUMYU-UG.",
+    "responsibilities": "Draft description (to be confirmed by the organisation): Runs the secretariat, records and correspondence.",
+    "order": 3,
+    "isPlaceholder": true,
+    "createdAt": "2026-11-04T00:00:00.000Z",
+    "updatedAt": "2026-11-04T00:00:00.000Z"
+  },
+  {
+    "id": "leadership-4",
+    "name": "To be confirmed",
+    "position": "Deputy Secretary General",
+    "group": "Executive Committee",
+    "photo": "/assets/images/avatar.svg",
+    "bio": "Placeholder profile. The name, photograph and biography will be added after confirmation by RUMYU-UG.",
+    "responsibilities": "Draft description (to be confirmed by the organisation): Assists the Secretary General.",
+    "order": 4,
+    "isPlaceholder": true,
+    "createdAt": "2026-11-04T00:00:00.000Z",
+    "updatedAt": "2026-11-04T00:00:00.000Z"
+  },
+  {
+    "id": "leadership-5",
+    "name": "To be confirmed",
+    "position": "Secretary for Information",
+    "group": "Executive Committee",
+    "photo": "/assets/images/avatar.svg",
+    "bio": "Placeholder profile. The name, photograph and biography will be added after confirmation by RUMYU-UG.",
+    "responsibilities": "Draft description (to be confirmed by the organisation): Manages communication, media and the website.",
+    "order": 5,
+    "isPlaceholder": true,
+    "createdAt": "2026-11-04T00:00:00.000Z",
+    "updatedAt": "2026-11-04T00:00:00.000Z"
+  },
+  {
+    "id": "leadership-6",
+    "name": "To be confirmed",
+    "position": "Treasurer",
+    "group": "Executive Committee",
+    "photo": "/assets/images/avatar.svg",
+    "bio": "Placeholder profile. The name, photograph and biography will be added after confirmation by RUMYU-UG.",
+    "responsibilities": "Draft description (to be confirmed by the organisation): Keeps financial records and reports on funds.",
+    "order": 6,
+    "isPlaceholder": true,
+    "createdAt": "2026-11-04T00:00:00.000Z",
+    "updatedAt": "2026-11-04T00:00:00.000Z"
+  },
+  {
+    "id": "leadership-7",
+    "name": "To be confirmed",
+    "position": "Executive Committee Member",
+    "group": "Other Committee Members",
+    "photo": "/assets/images/avatar.svg",
+    "bio": "Placeholder profile. The name, photograph and biography will be added after confirmation by RUMYU-UG.",
+    "responsibilities": "Draft description (to be confirmed by the organisation): Add further committee members from the admin dashboard.",
+    "order": 7,
+    "isPlaceholder": true,
+    "createdAt": "2026-11-04T00:00:00.000Z",
+    "updatedAt": "2026-11-04T00:00:00.000Z"
+  },
+  {
+    "id": 1794310776985,
+    "name": "Emma Marial Domkoc",
+    "position": "Secretary for information",
+    "bio": "savjklcmx,.djklasvfdjk;l cm,.x",
+    "photo": "http://localhost:3000/uploads/1794310776535.jpg"
+  },
+  {
+    "id": 1794311879057,
+    "name": "Emma Marial Domkoc",
+    "position": "Chairperson",
+    "bio": "fbsdhfbdbfdsbndsb",
+    "photo": "http://localhost:3000/uploads/1794311879016.jpg"
+  }
+]

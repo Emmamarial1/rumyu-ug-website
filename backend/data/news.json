@@ -1,0 +1,23 @@
+[
+  {
+    "id": "news-2",
+    "title": "DEMO: How event reports will look",
+    "category": "Community",
+    "author": "Website team (demo)",
+    "publishedAt": "2026-10-15",
+    "image": "/assets/images/ph-meeting.svg",
+    "published": true,
+    "isDemo": true,
+    "summary": "Another demonstration article. Delete it once real stories are available.",
+    "content": "This is DEMONSTRATION content written only to show the layout of the news page, the category filter, the search box and the \"Read more\" window.\n\nNo real event, person or achievement is described here.",
+    "createdAt": "2026-11-04T00:00:00.000Z",
+    "updatedAt": "2026-11-04T00:00:00.000Z"
+  },
+  {
+    "id": 1793796118456,
+    "title": "sdsarhtkil",
+    "category": "sdhgjkl'ssssssssssssdsad",
+    "content": "",
+    "date": "2026-11-04"
+  }
+]

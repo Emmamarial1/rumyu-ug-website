@@ -1,0 +1,21 @@
+[
+  {
+    "id": "events-1",
+    "title": "DEMO: General members’ meeting",
+    "date": "2027-01-16",
+    "time": "Time to be confirmed",
+    "location": "Kampala, Uganda (venue to be confirmed)",
+    "description": "DEMONSTRATION event. Replace it with a real upcoming event from the admin dashboard.",
+    "image": "/assets/images/ph-meeting.svg",
+    "isDemo": true,
+    "createdAt": "2026-11-04T00:00:00.000Z",
+    "updatedAt": "2026-11-04T00:00:00.000Z"
+  },
+  {
+    "id": 1794298875427,
+    "title": "cultural gala",
+    "date": "2026-11-10T08:21:15.427Z",
+    "location": "Mukonyonyo, Kampala",
+    "description": ""
+  }
+]

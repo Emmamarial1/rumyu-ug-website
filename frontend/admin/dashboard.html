@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard | RUMYU-UG Admin</title>
+  <link rel="stylesheet" href="../css/admin.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="admin-dashboard-body">
+
+  <!-- MODERN WHITE HEADER -->
+  <header class="admin-header">
+    <div class="admin-header-inner">
+      <div class="logo" style="display: flex; align-items: center; gap: 0.75rem;">
+        <img src="../assets/images/logo.jpg" alt="RUMYU-UG Logo" style="height: 45px; width: auto; border-radius: 4px;">
+        <div class="logo-text">
+          <span class="logo-title" style="color: var(--admin-navy); font-size: 1.2rem; font-weight: 700;">RUMYU-UG Admin</span>
+        </div>
+      </div>
+      <button id="logoutBtn" style="background: transparent; color: var(--admin-navy); border: 1px solid var(--admin-navy); padding: 0.5rem 1.2rem; border-radius: 6px; font-weight: 600; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.background='var(--admin-navy)'; this.style.color='#fff'" onmouseout="this.style.background='transparent'; this.style.color='var(--admin-navy)'">Log Out</button>
+    </div>
+  </header>
+
+  <div class="admin-layout">
+    <!-- DARK SIDEBAR -->
+    <aside class="admin-sidebar">
+      <nav>
+        <button class="admin-nav-btn active" data-target="section-overview">Overview</button>
+        <button class="admin-nav-btn" data-target="section-news">Manage News</button>
+        <button class="admin-nav-btn" data-target="section-events">Manage Events</button>
+        <button class="admin-nav-btn" data-target="section-leadership">Leadership</button>
+        <button class="admin-nav-btn" data-target="section-programs">Programs</button>
+        <button class="admin-nav-btn" data-target="section-gallery">Gallery</button>
+        <button class="admin-nav-btn" data-target="section-membership">Membership Enquiries</button>
+        <button class="admin-nav-btn" data-target="section-contact">Contact Messages</button>
+        <button class="admin-nav-btn" data-target="section-support">Support Pledges</button>
+      </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="admin-main">
+      
+      <!-- 1. OVERVIEW -->
+      <section id="section-overview" class="admin-section active">
+        <div class="admin-page-header">
+          <div>
+            <h1>Dashboard Overview</h1>
+            <p>Welcome back. Here is the current status of the RUMYU-UG website.</p>
+          </div>
+        </div>
+        <div class="admin-stats-grid">
+          <div class="admin-stat-card"><span class="stat-label">Total News</span><span class="stat-value" id="stat-news">0</span><span class="stat-icon">📰</span></div>
+          <div class="admin-stat-card"><span class="stat-label">Upcoming Events</span><span class="stat-value" id="stat-events">0</span><span class="stat-icon">📅</span></div>
+          <div class="admin-stat-card"><span class="stat-label">Enquiries</span><span class="stat-value" id="stat-membership">0</span><span class="stat-icon">👥</span></div>
+          <div class="admin-stat-card"><span class="stat-label">Messages</span><span class="stat-value" id="stat-contact">0</span><span class="stat-icon">✉️</span></div>
+        </div>
+      </section>
+
+      <!-- 2. MANAGE NEWS -->
+      <section id="section-news" class="admin-section">
+        <div class="admin-page-header">
+          <div>
+            <h1>Manage News</h1>
+            <p>Publish updates to the public website.</p>
+          </div>
+          <button type="button" class="btn btn-primary" onclick="openModal('news')">+ Add News Article</button>
+        </div>
+        <div class="admin-panel">
+          <table class="admin-table">
+            <thead><tr><th>Title</th><th>Date</th><th>Category</th><th>Actions</th></tr></thead>
+            <tbody id="table-news"><tr><td colspan="4" class="text-center">Loading...</td></tr></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 3. MANAGE EVENTS -->
+      <section id="section-events" class="admin-section">
+        <div class="admin-page-header">
+          <div>
+            <h1>Manage Events</h1>
+            <p>Schedule upcoming community events.</p>
+          </div>
+          <button type="button" class="btn btn-primary" onclick="openModal('events')">+ Add Event</button>
+        </div>
+        <div class="admin-panel">
+          <table class="admin-table">
+            <thead><tr><th>Event Title</th><th>Date</th><th>Location</th><th>Actions</th></tr></thead>
+            <tbody id="table-events"><tr><td colspan="4" class="text-center">Loading...</td></tr></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 4. MANAGE LEADERSHIP -->
+      <section id="section-leadership" class="admin-section">
+        <div class="admin-page-header">
+          <div>
+            <h1>Manage Leadership</h1>
+            <p>Update executive committee profiles and photos.</p>
+          </div>
+          <button type="button" class="btn btn-primary" onclick="openModal('leadership')">+ Add Leader</button>
+        </div>
+        <div class="admin-panel">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Photo</th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="table-leadership">
+              <tr><td colspan="4" class="text-center">Loading...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 5. MANAGE PROGRAMS -->
+      <section id="section-programs" class="admin-section">
+        <div class="admin-page-header">
+          <div>
+            <h1>Manage Programs</h1>
+            <p>Highlight the union's core focus areas.</p>
+          </div>
+          <button type="button" class="btn btn-primary" onclick="openModal('programs')">+ Add Program</button>
+        </div>
+        <div class="admin-panel">
+          <table class="admin-table">
+            <thead><tr><th>Program Title</th><th>Description</th><th>Actions</th></tr></thead>
+            <tbody id="table-programs"><tr><td colspan="3" class="text-center">Loading...</td></tr></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 6. MANAGE GALLERY -->
+      <section id="section-gallery" class="admin-section">
+        <div class="admin-page-header">
+          <div>
+            <h1>Manage Gallery</h1>
+            <p>Upload and organize photos.</p>
+          </div>
+          <button type="button" class="btn btn-primary" onclick="openModal('gallery')">+ Upload Image</button>
+        </div>
+        <div class="admin-panel">
+          <table class="admin-table">
+            <thead><tr><th>Image Preview</th><th>Caption</th><th>Actions</th></tr></thead>
+            <tbody id="table-gallery"><tr><td colspan="3" class="text-center">Loading...</td></tr></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 7. MEMBERSHIP -->
+      <section id="section-membership" class="admin-section">
+        <div class="admin-page-header">
+          <div>
+            <h1>Membership Enquiries</h1>
+            <p>View requests from people wanting to join.</p>
+          </div>
+        </div>
+        <div class="admin-panel">
+          <div id="list-membership" class="admin-data-list"><p>Loading...</p></div>
+        </div>
+      </section>
+
+      <!-- 8. CONTACT -->
+      <section id="section-contact" class="admin-section">
+        <div class="admin-page-header">
+          <div>
+            <h1>Contact Messages</h1>
+            <p>Read messages sent from the public contact form.</p>
+          </div>
+        </div>
+        <div class="admin-panel">
+          <div id="list-contact" class="admin-data-list"><p>Loading...</p></div>
+        </div>
+      </section>
+
+      <!-- 9. SUPPORT PLEDGES -->
+      <section id="section-support" class="admin-section">
+        <div class="admin-page-header">
+          <div>
+            <h1>Support & Sponsorships</h1>
+            <p>View financial pledges and resource donations.</p>
+          </div>
+        </div>
+        <div class="admin-panel">
+          <div id="list-support" class="admin-data-list"><p>Loading...</p></div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- MODALS (POPUP FORMS) -->
+  <div id="modal-overlay" class="admin-modal" style="display: none;">
+    <div class="admin-modal-content">
+      <span class="close-modal" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title" style="color: var(--admin-navy); margin-bottom: 1.5rem;">Add Item</h2>
+      
+      <form id="modal-form" novalidate>
+        
+        <!-- News Form Fields -->
+        <div id="form-news" class="form-section" style="display:none;">
+          <div class="form-group"><label>Title *</label><input type="text" id="news-title" placeholder="e.g., New Cultural Event Announced"></div>
+          <div class="form-group"><label>Category *</label><input type="text" id="news-category" placeholder="e.g., Announcements"></div>
+          <div class="form-group"><label>Content *</label><textarea id="news-content" rows="5" placeholder="Write the full article here..."></textarea></div>
+        </div>
+
+        <!-- Events Form Fields -->
+        <div id="form-events" class="form-section" style="display:none;">
+          <div class="form-group"><label>Event Title *</label><input type="text" id="event-title" placeholder="e.g., Annual General Meeting"></div>
+          <div class="form-group"><label>Date *</label><input type="date" id="event-date"></div>
+          <div class="form-group"><label>Location *</label><input type="text" id="event-location" placeholder="e.g., Kampala, Uganda"></div>
+          <div class="form-group"><label>Description</label><textarea id="event-desc" rows="3" placeholder="Brief details about the event..."></textarea></div>
+        </div>
+
+        <!-- Leadership Form Fields (WITH DROPDOWN & IMAGE UPLOAD) -->
+        <div id="form-leadership" class="form-section" style="display:none;">
+          <div class="form-group"><label>Full Name *</label><input type="text" id="leader-name" placeholder="e.g., John Mabor Makoi"></div>
+          
+          <div class="form-group">
+            <label>Position *</label>
+            <select id="leader-position" style="width: 100%; padding: 0.8rem; border: 1px solid var(--admin-border); border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 0.95rem; background: #fff;">
+              <option value="">-- Select Position --</option>
+              
+              <!-- Top Leadership -->
+              <option value="Chairperson">Chairperson</option>
+              <option value="Vice Chairperson">Vice Chairperson</option>
+              <option value="Secretary General">Secretary General</option>
+              <option value="Deputy Secretary General">Deputy Secretary General</option>
+              
+              <!-- Assembly -->
+              <option value="Speaker">Speaker</option>
+              <option value="Deputy Speaker">Deputy Speaker</option>
+              
+              <!-- Finance -->
+              <option value="Finance Secretary">Finance Secretary</option>
+              <option value="Deputy Finance Secretary">Deputy Finance Secretary</option>
+              
+              <!-- Information -->
+              <option value="Information Secretary">Information Secretary</option>
+              <option value="Deputy Information Secretary">Deputy Information Secretary</option>
+              
+              <!-- Specific Roles -->
+              <option value="Legal Affairs Secretary">Legal Affairs Secretary</option>
+              <option value="Religion & Education Secretary">Religion & Education Secretary</option>
+              <option value="Culture Secretary">Culture Secretary</option>
+              <option value="Sports Secretary">Sports Secretary</option>
+              
+              <!-- Advisors -->
+              <option value="Advisor">Advisor</option>
+            </select>
+          </div>
+
+          <div class="form-group"><label>Upload Photo</label><input type="file" id="leader-image" accept="image/*" style="padding: 0.5rem;"></div>
+          <div class="form-group"><label>Short Bio</label><textarea id="leader-bio" rows="3" placeholder="A few sentences about their background..."></textarea></div>
+        </div>
+
+        <!-- Programs Form Fields -->
+        <div id="form-programs" class="form-section" style="display:none;">
+          <div class="form-group"><label>Program Title *</label><input type="text" id="program-title" placeholder="e.g., Youth Empowerment"></div>
+          <div class="form-group"><label>Description *</label><textarea id="program-desc" rows="3" placeholder="Describe what this program does..."></textarea></div>
+        </div>
+
+        <!-- Gallery Form Fields (FILE UPLOAD) -->
+        <div id="form-gallery" class="form-section" style="display:none;">
+          <div class="form-group"><label>Select Image *</label><input type="file" id="gallery-image" accept="image/*" style="padding: 0.5rem;"></div>
+          <div class="form-group"><label>Caption</label><input type="text" id="gallery-caption" placeholder="e.g., RUMYU-UG Members at the 2025 Gala"></div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem; background: var(--admin-gold); color: var(--admin-navy); border: none; padding: 1rem; border-radius: 8px; font-weight: 700; cursor: pointer;">Save Item</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="../js/admin.js"></script>
+</body>
+</html>

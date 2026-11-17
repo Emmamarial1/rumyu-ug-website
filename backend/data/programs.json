@@ -1,0 +1,62 @@
+[
+  {
+    "id": "programs-2",
+    "title": "Education and academic development",
+    "status": "Proposed focus area",
+    "image": "/assets/images/ph-education.svg",
+    "order": 2,
+    "description": "Encouraging academic progress among Rumbek students and youth in Uganda, including peer support and sharing of study opportunities. (Proposed focus area - subject to confirmation by RUMYU-UG. Not a completed project.)",
+    "createdAt": "2026-11-04T00:00:00.000Z",
+    "updatedAt": "2026-11-04T00:00:00.000Z"
+  },
+  {
+    "id": "programs-4",
+    "title": "Peacebuilding and reconciliation",
+    "status": "Proposed focus area",
+    "image": "/assets/images/ph-peace.svg",
+    "order": 4,
+    "description": "Promoting unity, dialogue and peaceful coexistence within the Rumbek community and with neighbours. (Proposed focus area - subject to confirmation by RUMYU-UG. Not a completed project.)",
+    "createdAt": "2026-11-04T00:00:00.000Z",
+    "updatedAt": "2026-11-04T00:00:00.000Z"
+  },
+  {
+    "id": "programs-5",
+    "title": "Cultural preservation",
+    "status": "Proposed focus area",
+    "image": "/assets/images/ph-culture.svg",
+    "order": 5,
+    "description": "Keeping alive the language, songs, dance and traditions of the community among youth living abroad. (Proposed focus area - subject to confirmation by RUMYU-UG. Not a completed project.)",
+    "createdAt": "2026-11-04T00:00:00.000Z",
+    "updatedAt": "2026-11-04T00:00:00.000Z"
+  },
+  {
+    "id": "programs-6",
+    "title": "Community engagement",
+    "status": "Proposed focus area",
+    "image": "/assets/images/ph-community.svg",
+    "order": 6,
+    "description": "Welfare support, visits and solidarity activities for members and families in Uganda. (Proposed focus area - subject to confirmation by RUMYU-UG. Not a completed project.)",
+    "createdAt": "2026-11-04T00:00:00.000Z",
+    "updatedAt": "2026-11-04T00:00:00.000Z"
+  },
+  {
+    "id": "programs-7",
+    "title": "Sports and social activities",
+    "status": "Proposed focus area",
+    "image": "/assets/images/ph-sports.svg",
+    "order": 7,
+    "description": "Friendly sports, social gatherings and events that bring members together. (Proposed focus area - subject to confirmation by RUMYU-UG. Not a completed project.)",
+    "createdAt": "2026-11-04T00:00:00.000Z",
+    "updatedAt": "2026-11-04T00:00:00.000Z"
+  },
+  {
+    "id": "programs-8",
+    "title": "Mentorship and networking",
+    "status": "Proposed focus area",
+    "image": "/assets/images/ph-mentorship.svg",
+    "order": 8,
+    "description": "Connecting students and young professionals with experienced mentors and with each other. (Proposed focus area - subject to confirmation by RUMYU-UG. Not a completed project.)",
+    "createdAt": "2026-11-04T00:00:00.000Z",
+    "updatedAt": "2026-11-04T00:00:00.000Z"
+  }
+]

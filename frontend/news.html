@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>News &amp; Events | RUMYU-UG</title>
+  <meta name="description" content="Stay up to date with the latest news, announcements, and upcoming events from Rumbek Youth Union - Uganda Chapter.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<main id="main">
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="background-image: url('assets/images/agaarMadong1.jpeg');">
+    <div class="container reveal">
+      <p class="tagline">Stay Informed</p>
+      <h1>News &amp; Events</h1>
+      <p>Discover what's happening within the RUMYU-UG community. Celebrating our culture and achievements.</p>
+    </div>
+  </section>
+
+  <!-- LATEST NEWS SECTION -->
+  <section class="section" style="background: #0a192f;">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow" style="color: var(--gold);">Latest Updates</p>
+        <h2 style="color: #fff;">News &amp; Announcements</h2>
+      </div>
+
+      <!-- ============================================================
+           DYNAMIC CONTAINER  (filled by js/public-data.js)
+           Stays empty if there is no backend / fetch fails.
+           ============================================================ -->
+      <div class="grid grid-3" id="public-news" aria-live="polite"></div>
+
+      <!-- ============================================================
+           STATIC CONTAINER  (hand-written news)
+           JavaScript NEVER touches this. Add / edit your articles here.
+           ============================================================ -->
+      <div class="grid grid-3" id="static-news">
+
+        <article class="news-card">
+          <div class="news-image-placeholder" style="background: #060f1e; border-bottom: 3px solid var(--gold); color: #8892b0;">
+            <span>Image Placeholder</span>
+          </div>
+          <div class="news-content">
+            <div class="news-meta">
+              <span class="news-date" style="color: #8892b0;">12 Nov 2026</span> &bull;
+              <span class="news-category" style="color: var(--gold);">Announcements</span>
+            </div>
+            <h3 style="color: #e6f1ff;">RUMYU-UG General Assembly Meeting</h3>
+            <p style="color: #a8b2d1;">This is a placeholder for a future news article. Updates regarding the union's activities and official statements will appear here.</p>
+            <a href="#" class="read-more" style="color: var(--gold);">Read More &rarr;</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-image-placeholder" style="background: #060f1e; border-bottom: 3px solid var(--gold); color: #8892b0;">
+            <span>Image Placeholder</span>
+          </div>
+          <div class="news-content">
+            <div class="news-meta">
+              <span class="news-date" style="color: #8892b0;">05 Nov 2026</span> &bull;
+              <span class="news-category" style="color: var(--gold);">Community</span>
+            </div>
+            <h3 style="color: #e6f1ff;">Diaspora Engagement Drive</h3>
+            <p style="color: #a8b2d1;">Detailed information about recent community engagements, meetings, or diaspora activities will be published here by the executive.</p>
+            <a href="#" class="read-more" style="color: var(--gold);">Read More &rarr;</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-image-placeholder" style="background: #060f1e; border-bottom: 3px solid var(--gold); color: #8892b0;">
+            <span>Image Placeholder</span>
+          </div>
+          <div class="news-content">
+            <div class="news-meta">
+              <span class="news-date" style="color: #8892b0;">28 Oct 2026</span> &bull;
+              <span class="news-category" style="color: var(--gold);">Press Release</span>
+            </div>
+            <h3 style="color: #e6f1ff;">Official Statement from Leadership</h3>
+            <p style="color: #a8b2d1;">Official press releases and statements from the leadership of Rumbek Youth Union - Uganda Chapter will be posted here.</p>
+            <a href="#" class="read-more" style="color: var(--gold);">Read More &rarr;</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- UPCOMING EVENTS SECTION -->
+  <section class="section" style="background: #060f1e; border-top: 1px solid #112240;">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow" style="color: var(--gold);">Mark Your Calendar</p>
+        <h2 style="color: #fff;">Upcoming Events</h2>
+      </div>
+
+      <!-- Dynamic events (filled by JS, empty by default) -->
+      <div class="event-list" id="public-events" aria-live="polite"></div>
+
+      <!-- Static events (never touched by JS) -->
+      <div class="event-list" id="static-events">
+
+        <div class="event-card">
+          <div class="event-date-box" style="background: var(--gold); color: #0a192f;">
+            <span class="event-month" style="color: #0a192f; font-weight: 800;">TBC</span>
+            <span class="event-day" style="color: #0a192f;">--</span>
+          </div>
+          <div class="event-details" style="background: #112240;">
+            <h3 style="color: #e6f1ff;">Annual Youth Cultural Festival</h3>
+            <p class="event-meta" style="color: #8892b0;">&#128205; Kampala, Uganda &bull; &#128336; Time TBC</p>
+            <p style="color: #a8b2d1;">Details regarding the next general assembly or community gathering will be posted here. Keep checking this page for updates.</p>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date-box" style="background: var(--gold); color: #0a192f;">
+            <span class="event-month" style="color: #0a192f; font-weight: 800;">TBC</span>
+            <span class="event-day" style="color: #0a192f;">--</span>
+          </div>
+          <div class="event-details" style="background: #112240;">
+            <h3 style="color: #e6f1ff;">Leadership &amp; Mentorship Workshop</h3>
+            <p class="event-meta" style="color: #8892b0;">&#128205; Location TBC &bull; &#128336; Time TBC</p>
+            <p style="color: #a8b2d1;">Information about upcoming youth empowerment workshops, sports tournaments, or cultural events will be listed here.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="cta" style="background: #112240; border-top: 1px solid #233554; padding: 6rem 0;">
+    <div class="container reveal text-center">
+      <h2 style="color: white; font-size: 2.5rem; margin-bottom: 1rem;">Stay Connected</h2>
+      <p style="color: #8892b0; font-size: 1.2rem; margin-bottom: 2rem;">Have an announcement or event you want to share with the community? Let us know.</p>
+      <a class="btn btn-gold" href="contact.html" style="padding: 1rem 2.5rem; font-size: 1.1rem;">Submit an Update</a>
+    </div>
+  </section>
+    <!-- NEWS ARTICLE MODAL (POPUP) -->
+  <div id="newsModal" class="news-modal">
+    <div class="news-modal-content">
+      <span class="close-news-modal" onclick="closeNewsModal()">&times;</span>
+      <div id="modalNewsCategory" class="news-category" style="color: var(--gold); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;"></div>
+      <h2 id="modalNewsTitle" style="color: #ffffff; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.2rem; margin-bottom: 1rem; line-height: 1.2;"></h2>
+      <p id="modalNewsDate" style="color: #8892b0; font-size: 0.9rem; margin-bottom: 2rem; border-bottom: 1px solid #233554; padding-bottom: 1rem;"></p>
+      <div id="modalNewsContent" style="color: #ccd6f6; font-size: 1.05rem; line-height: 1.8;"></div>
+    </div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+
+<!-- Scripts -->
+<script src="js/navigation.js"></script>
+<script src="js/public-data.js"></script>
+
+<!-- SAFETY NET: makes sure nothing stays hidden if the reveal
+     observer in navigation.js fails to run for any reason. -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(function () {
+      document.querySelectorAll('.reveal').forEach(function (el) {
+        if (!el.classList.contains('is-visible')) {
+          el.classList.add('is-visible');
+          el.style.opacity    = '1';
+          el.style.transform  = 'none';
+          el.style.visibility = 'visible';
+        }
+      });
+    }, 1200);
+  });
+</script>
+<noscript>
+  <style>
+    .reveal { opacity: 1 !important; transform: none !important; visibility: visible !important; }
+  </style>
+</noscript>
+</body>
+</html>

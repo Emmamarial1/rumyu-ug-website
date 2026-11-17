@@ -1,0 +1,22 @@
+[
+  {
+    "id": "gallery-2",
+    "title": "Placeholder: Cultural events",
+    "category": "Cultural events",
+    "image": "/assets/images/ph-culture.svg",
+    "caption": "Placeholder image. Replace with a real RUMYU-UG photograph.",
+    "isPlaceholder": true,
+    "createdAt": "2026-11-04T00:00:00.000Z",
+    "updatedAt": "2026-11-04T00:00:00.000Z"
+  },
+  {
+    "id": 1793796767830,
+    "url": "http://localhost:3000/uploads/1793796767679.jpg",
+    "caption": "Ema md"
+  },
+  {
+    "id": 1793797328107,
+    "url": "http://localhost:3000/uploads/1793797327971.jpg",
+    "caption": "us"
+  }
+]

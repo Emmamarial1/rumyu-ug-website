@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:3000/api';
+const API_BASE = 'https://rumyu-ug-website.onrender.com/api';
 
 function getAuthToken() {
   return localStorage.getItem('rumyuAdminToken');

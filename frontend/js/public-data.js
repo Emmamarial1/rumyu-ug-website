@@ -1,4 +1,4 @@
-const PUBLIC_API = 'http://localhost:3000/api';
+const PUBLIC_API = 'https://rumyu-ug-website.onrender.com/api';
 
 document.addEventListener('DOMContentLoaded', function() {
   // Check which page we are on and load the right data
